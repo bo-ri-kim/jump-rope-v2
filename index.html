@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>2G JUMP ROPE - CAT EDITION</title>
+  <link rel="stylesheet" href="style.css?v=crisp48">
+  <link rel="stylesheet" href="mobile.css?v=portrait-fit">
+</head>
+<body>
+
+  <div id="phone-frame">
+    <div id="mode-bar">
+      <button class="mode-btn active" id="mode-normal" onclick="selectGameMode('NORMAL')">일반 순차</button>
+      <button class="mode-btn" id="mode-infinity" onclick="selectGameMode('INFINITY')">🕳️ 블랙홀</button>
+      <button class="leaderboard-btn" onclick="openLeaderboardModal()">🏆 웹 랭킹</button>
+    </div>
+
+    <div id="status-bar">
+      <span>SCORE: <span id="score-text" class="score-value">0</span> <span id="best-text" class="best-score-value">(BEST: 0)</span></span>
+      <span id="stage-badge" class="stage-label">STAGE 1: DAY</span>
+      <button class="mini-btn" id="pauseBtn" onclick="togglePause(event)">PAUSE</button>
+    </div>
+
+    <div id="canvas-container">
+      <canvas id="gameCanvas" width="360" height="380"></canvas>
+      
+      <div id="pause-screen-overlay">
+        <div class="pause-screen-text">⏸️ PAUSED<br><span class="pause-description">게임이 일시정지되었습니다</span></div>
+        <button class="screen-resume-btn" onclick="resumeGameFromScreen(event)">▶ 계속하기 (RESUME)</button>
+      </div>
+    </div>
+
+    <button id="actionBtn">
+      <span id="actionBtnTitle">점프! (JUMP)</span>
+      <span class="sub" id="actionBtnSub">탭: 소점프 / 롱홀드: 대점프 / Space</span>
+    </button>
+  </div>
+
+  <div class="modal-overlay" id="resultModal">
+    <div class="modal-box">
+      <div class="modal-title">💥 GAME OVER</div>
+      <div class="score-summary-card">
+        <div>최종 점수: <b id="modal-score-val">0</b>점</div>
+        <div class="result-details" id="modal-sub-val">STAGE 1 / 0콤보</div>
+      </div>
+      <input type="text" id="nicknameInput" class="modal-input" maxlength="8" placeholder="닉네임 입력 (최대 8자)">
+      <div class="modal-btn-row">
+        <button class="modal-btn secondary" onclick="skipAndReadyRestart()">건너뛰기</button>
+        <button class="modal-btn primary" id="submitScoreBtn" onclick="submitScoreToLeaderboard()">기록 등록</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="leaderboardModal">
+    <div class="modal-box">
+      <div class="modal-title">🏆 온라인 명예의 전당</div>
+      <ul class="leaderboard-list" id="leaderboardList">
+        <li class="leaderboard-item initial-loading-row">불러오는 중...</li>
+      </ul>
+      <div id="sync-status" class="sync-status-text"></div>
+      <button class="modal-btn secondary" onclick="closeLeaderboardModal()">닫기</button>
+    </div>
+  </div>
+
+  <!-- Classic scripts share the original globals. Helpers load before game initialization. -->
+  <script src="js/backgrounds.js?v=effects8"></script>
+  <script src="js/renderer.js?v=rope-brown2"></script>
+  <script src="js/leaderboard.js"></script>
+  <script src="js/game.js?v=blackhole-speed70"></script>
+</body>
+</html>

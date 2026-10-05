@@ -1,0 +1,169 @@
+[
+  null,
+  {
+    "background": "stage-01.png",
+    "effects": []
+  },
+  {
+    "background": "stage-02.png",
+    "effects": []
+  },
+  {
+    "background": "stage-03.png",
+    "effects": [
+      {
+        "file": "stage-03-stars.png",
+        "kind": "stars",
+        "x": 8,
+        "y": 22,
+        "w": 163,
+        "h": 192
+      },
+      {
+        "file": "moon.png",
+        "kind": "moon-rise",
+        "x": 111,
+        "y": 34,
+        "w": 49,
+        "h": 49
+      },
+      {
+        "file": "stage-03-foreground.png",
+        "kind": "foreground",
+        "x": 0,
+        "y": 0,
+        "w": 180,
+        "h": 390
+      }
+    ]
+  },
+  {
+    "background": "stage-04.png",
+    "effects": [
+      {
+        "file": "stage-04-stars.png",
+        "kind": "stars",
+        "x": 8,
+        "y": 17,
+        "w": 168,
+        "h": 187
+      },
+      {
+        "file": "moon.png",
+        "kind": "moon-set",
+        "x": 111,
+        "y": 34,
+        "w": 49,
+        "h": 49
+      },
+      {
+        "file": "stage-04-foreground.png",
+        "kind": "foreground",
+        "x": 0,
+        "y": 0,
+        "w": 180,
+        "h": 390
+      }
+    ]
+  },
+  {
+    "background": "stage-05.png",
+    "effects": [
+      {
+        "file": "stage-05-stars.png",
+        "kind": "stars",
+        "x": 6,
+        "y": 19,
+        "w": 169,
+        "h": 184
+      },
+      {
+        "file": "stage-05-firework-1.png",
+        "kind": "firework-1",
+        "x": 22,
+        "y": 37,
+        "w": 50,
+        "h": 51
+      },
+      {
+        "file": "stage-05-firework-2.png",
+        "kind": "firework-2",
+        "x": 101,
+        "y": 73,
+        "w": 62,
+        "h": 62
+      },
+      {
+        "file": "stage-05-firework-3.png",
+        "kind": "firework-3",
+        "x": 56,
+        "y": 133,
+        "w": 42,
+        "h": 43
+      }
+    ]
+  },
+  {
+    "background": "stage-06.png",
+    "effects": [
+      {
+        "file": "stage-06-stars.png",
+        "kind": "stars",
+        "x": 12,
+        "y": 16,
+        "w": 154,
+        "h": 188
+      },
+      {
+        "file": "stage-06-meteor.png",
+        "kind": "meteor",
+        "x": 58,
+        "y": 0,
+        "w": 65,
+        "h": 65
+      },
+      {
+        "file": "stage-06-embers.png",
+        "kind": "embers",
+        "x": 6,
+        "y": 258,
+        "w": 170,
+        "h": 125
+      }
+    ]
+  },
+  {
+    "background": "stage-07.png",
+    "effects": [
+      {
+        "file": "stage-07-streaks.png",
+        "kind": "streaks",
+        "x": 5,
+        "y": 21,
+        "w": 170,
+        "h": 369
+      }
+    ]
+  },
+  {
+    "background": "stage-08.png",
+    "effects": [
+      {
+        "file": "stage-08-stars.png",
+        "kind": "stars",
+        "x": 6,
+        "y": 15,
+        "w": 166,
+        "h": 372
+      },
+      {
+        "file": "stage-08-blackhole.png",
+        "kind": "blackhole",
+        "x": 20,
+        "y": 74,
+        "w": 141,
+        "h": 57
+      }
+    ]
+  }
+]
